@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background: orange;
+}
+
+#navigationbar {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom-right-radius: 5%;
+}
+
+    #image-container {
+        max-width: 200px;
+        max-height: 250px;
+        margin: 100px 0px 20px 0px;
+        border: 1px solid;
+        border-radius: 50%;
+    }
+
+        #image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            border-radius: 50%;
+        }
+
+#breakpoint-container {
+    width: 100%;
+    height: 380px;
+}
+
+    #breakpointlist {
+        list-style: none;
+        width: 100%;
+    }
+
+        .listelement {
+            width: 100%;
+            height: 30px;
+            margin: 40px 0px 40px 0px;
+            text-align: center;
+            display: flex;
+
+        }
+    
+            .listitem-link {
+                color: rgba(255, 255, 255, 0.514);
+                text-decoration: none;
+                font-size: 20px;
+                width: 100%;
+                transition: 0.5s;
+            }
+            
+            .listitem-link:hover {
+                color: orange;
+                scale: 1.2;
+            }
+
+
+#social-media-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+    #social-media-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+
+    #social-media-bar a:hover {
+        scale: 2.5;
+
+    } 
+
+   
+
+    
+
+#content {
+    width: calc(100% - 300px);
+    background-color: orange;
+    height: auto;
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+    #content h1 {
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        margin-top: 200px;
+    }
+
+    .content-container {
+        display: flex;
+        padding: 50px;
+        justify-content: center;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+        #text-box{
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            width: 80%;
+            
+        }
