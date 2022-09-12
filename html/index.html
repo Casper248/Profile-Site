@@ -3,9 +3,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/webfonts/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="/css/progresscircle.css">
+    <link rel="stylesheet" href="/css/glossycard.css">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Profile Site</title>
+    <title>Felix Werner Webdeveloper</title>
 </head>
 <body>
     <div id="navigationbar"><!--NAVIGATIONBAR START-->
@@ -14,71 +16,127 @@
         </div>
         <div id="breakpoint-container">
             <ol id="breakpointlist">
-                <li class="listelement" id="listitem-about-me"><a class="listitem-link" onclick="goTo('content')">Über mich</a></li>
-                <li class="listelement" id="listitem-career"><a class="listitem-link" onclick="goTo('career')">Karriere </a></li>
-                <li class="listelement" id="listitem-skills"><a class="listitem-link" onclick="goTo('skills')">Fähigkeiten</a></li>
-                <li class="listelement" id="listitem-contact"><a class="listitem-link" onclick="goTo('contact')">Kontakt</a></li>
+                <li class="listelement" id="listitem-about-me"><a class="listitem-link" onclick="goTo('bottom-about-me')">Über mich</a></li>
+                <li class="listelement" id="listitem-career"><a class="listitem-link" onclick="goTo('bottom-career')">Karriere </a></li>
+                <li class="listelement" id="listitem-skills"><a class="listitem-link" onclick="goTo('bottom-skills')">Fähigkeiten</a></li>
+                <li class="listelement" id="listitem-contact"><a class="listitem-link" onclick="goTo('bottom-contact')">Kontakt</a></li>
             </ol>
         </div>
         <div id="social-media-bar">
-            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.github.com"><i class="fa fa-github"></i></a>
-            <a href="https://www.xing.com"><i class="fa fa-xing"></i></a>
-            <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.github.com"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.xing.com"><i class="fa-brands fa-xing"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
         </div>
 
     </div> <!--NAVIGATIONBAR END-->
 
     <div id="content"><!--Content START-->
-        <h1 id="about-me">Über mich</h1>
         <div class="content-container">
+            <h1 id="about-me">Felix Werner</h1>
             <div id="text-box">
+                Seit September 2020 befinde ich mich in der Ausbildung zum Fachinformatiker für Anwendungsentwicklung,
+                hier kann ich viel erfahrung im Bereich Web-/Desktopentwicklung lernen. Ich habe zwei
+                 Websiten erstellt und eine Desktopanwendung geschrieben. <br> In meiner Freizeit verbringe ich gerne zeit mit Freunden, fahre Fahrrad, 
+                 oder mache Filmaufnahmen mit meiner Drohne von schönen Frauen.
+            </div>       
+        </div>
+        <hr id="bottom-about-me" style="width: 90%; margin: auto; opacity: 0.7;">
+        <div class="content-container">
+            <h1 id="career">Karriere</h1>
+            <div id="text-box">
+                <ul>
+                    <li>Fachinformatiker für Anwendungsentwicklung | | 2020-heute</li>
+                </ul>
+            </div>       
+        </div>
+        <hr id="bottom-career" style="width: 90%; margin: auto; opacity: 0.7;">
+        <div class="content-container">
+            <h1 id="skills">Fähigkeiten</h1>
+            <div id="text-box">
+                <div id="skill-box">
+                    <div class="glossycard" data-tilt data-tilt-glare>
+                        <div id="skill">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <div id="content-circle">
+                                        <p>65%</p>
+                                        <i class="fa-brands fa-html5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="250px" height="250px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="125" cy="125" r="115" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="glossycard" data-tilt data-tilt-glare>
+                        <div id="skill">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <div id="content-circle">
+                                        <p>65%</p>
+                                        <i class="fa-brands fa-css3"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="250px" height="250px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="125" cy="125" r="115" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="glossycard" data-tilt data-tilt-glare>
+                        <div id="skill">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <div id="content-circle">
+                                        <p>65%</p>
+                                        <i class="fa-brands fa-js"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="250px" height="250px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="125" cy="125" r="115" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+        <hr id="bottom-skills" style="width: 90%; margin: auto; opacity: 0.7;">
+        <div class="content-container">
+            <h1 id="contact">Kontakt</h1>
+            <div id="text-box" lang="de">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
                 labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
                 ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
                 ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et 
                 dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                  Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </div>       
+            </div> 
         </div>
-        <hr id="bottom-about-me">
-        <h1 id="career">Karriere</h1>
-        <div class="content-container">
-            <div id="text-box">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
-                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
-                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et 
-                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </div>       
-        </div>
-        <h1 id="skills">Fähigkeiten</h1>
-        <div class="content-container">
-            <div id="text-box">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
-                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
-                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et 
-                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </div>       
-        </div>
-        <h1 id="contact">Kontakt</h1>
-        <div class="content-container">
-            <div id="text-box">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
-                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
-                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et 
-                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </div>       
-        </div>
+        <hr id="bottom-contact" style="opacity: 0;">      
     </div><!--Content END-->
+    <script type="text/javascript" src="/javascript/vanilla-tilt.js"></script>
+    <script src="/javascript/logic.js"></script>
     
 </body>
-<script src="/javascript/logic.js"></script>
-
-
 </html>
